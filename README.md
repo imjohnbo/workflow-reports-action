@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: imjohnbo/workflow-reports-action@v0 # still in early stages :-)
+    - uses: imjohnbo/workflow-reports-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -53,7 +53,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: imjohnbo/workflow-reports-action@v0 # still in early stages :-)
+    - uses: imjohnbo/workflow-reports-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:

@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/imjohnbo/workflow-reports-action/compare/v1.0.0...v1.0.1) (2020-11-25)
+
+
+### Bug Fixes
+
+* stray colon character ([3735ca5](https://www.github.com/imjohnbo/workflow-reports-action/commit/3735ca519f6cd55126ee6f43b763fe55932cba60))
+
 ## 1.0.0 (2020-11-25)
 
 

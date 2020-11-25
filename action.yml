@@ -1,6 +1,9 @@
 name: 'Workflow Reports Action'
 description: 'Generate reports on how a user or organization uses GitHub Actions'
 author: 'John Bohannon'
+branding:
+  color: 'white'
+  icon: 'activity'
 inputs:
   owner:
     required: false

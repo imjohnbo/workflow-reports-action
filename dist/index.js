@@ -18682,7 +18682,7 @@ function run() {
             // If an owner is supplied, get repositories for that owner
             if (owner != null) {
                 const report = yield generateReport(owner);
-                const ymd = (new Date()).toISOString();
+                const ymd = (new Date()).toISOString().split('T')[0];
                 const filename = `${ymd}-${owner}-report.json`;
                 core.debug(`report: ${JSON.stringify(report, null, 4)}`);
                 yield writeFile(filename, report);

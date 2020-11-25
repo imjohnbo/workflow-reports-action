@@ -18541,6 +18541,7 @@ var __asyncValues = (this && this.__asyncValues) || function (o) {
 };
 var _a;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.run = void 0;
 const core = __importStar(__webpack_require__(2186));
 const github = __importStar(__webpack_require__(5438));
 const artifact = __importStar(__webpack_require__(2605));
@@ -18697,7 +18698,10 @@ function run() {
         }
     });
 }
-run();
+exports.run = run;
+if (require.main === require.cache[eval('__filename')]) {
+    run();
+}
 
 
 /***/ }),

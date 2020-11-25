@@ -150,7 +150,7 @@ const uploadArtifact = async (owner: string, filename: string, report: Reports) 
   await artifactClient.uploadArtifact(artifactName, files, rootDirectory, options)
 }
 
-async function run (): Promise<void> {
+export async function run (): Promise<void> {
   try {
     const owner: string = core.getInput('owner')
 
@@ -174,4 +174,6 @@ async function run (): Promise<void> {
   }
 }
 
-run()
+if (require.main === module) {
+  run()
+}

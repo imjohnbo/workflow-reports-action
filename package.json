@@ -1,6 +1,6 @@
 {
   "name": "workflow-reports-action",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "Generate reports on how a user or organization uses GitHub Actions",
   "main": "dist/main.js",

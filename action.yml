@@ -1,0 +1,13 @@
+name: 'Workflow Reports Action'
+description: 'Generate reports on how a user or organization uses GitHub Actions'
+author: 'John Bohannon'
+inputs:
+  owner:
+    required: false
+    description: The owner (user or organization) to generate reports for. Defaults to the owner of the workflow calling the action.
+outputs:
+  report:
+    description: JSON string of report.
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

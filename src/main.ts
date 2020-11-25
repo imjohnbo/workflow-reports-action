@@ -4,7 +4,7 @@ import * as artifact from '@actions/artifact'
 import * as fs from 'fs'
 import { ReposGetContentResponseData } from '@octokit/types'
 import { WorkflowParser } from './workflow-parser'
-import { File, RepoWithOwner, Reports, Workflow, WorkflowData } from '../lib/types'
+import { File, RepoWithOwner, Reports, Workflow, WorkflowData } from '../interfaces/types'
 
 const octokit = github.getOctokit(process.env.GITHUB_TOKEN ?? '')
 

@@ -2,14 +2,13 @@ import * as core from '@actions/core'
 import * as github from '@actions/github'
 import * as artifact from '@actions/artifact'
 import * as fs from 'fs'
-import { ReposGetContentResponseData } from '@octokit/types'
 import { WorkflowParser } from './workflow-parser'
 import { File, RepoWithOwner, Reports, Workflow, WorkflowData } from '../interfaces/types'
 
 const octokit = github.getOctokit(process.env.GITHUB_TOKEN ?? '')
 
 // Return raw text of file contents, or empty string
-const getRawFileContents = async (file: File, params: RepoWithOwner): Promise<ReposGetContentResponseData | undefined> => {
+const getRawFileContents = async (file: File, params: RepoWithOwner): Promise<any> => {
   core.debug(`getRawFileContents. params: ${params.owner}, ${params.repo}, file: ${file.path}`)
 
   if (file.type === 'file') {
